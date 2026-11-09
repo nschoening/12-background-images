@@ -1,0 +1,170 @@
+/* ---------- Colors ---------- */
+/* Estimated from the screenshot. Swap in the exact hex codes from Figma if they differ. */
+:root {
+    --orange: #F4934A;
+    --blue: #1D93BB;
+    --cream: #FCF8EE;
+    --mint: #BFE8E1;
+    --text: #333333;
+}
+
+/* ---------- Page ---------- */
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    line-height: 38px;
+    color: var(--text);
+
+    /* Tileable pattern that stays put while the content scrolls */
+    background-color: var(--mint);
+    background-image: url("pattern.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* ---------- Header ---------- */
+.header-bar {
+    background-color: var(--orange);
+    padding: 40px 0 20px 0;
+}
+
+.site-title {
+    width: 775px;
+    margin: 0 auto 10px auto;
+    font-family: "Pacifico", cursive;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 80px;
+    color: white;
+}
+
+.site-nav {
+    width: 775px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: 4px 18px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------- Hero banner ---------- */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 480px;
+    border-top: 5px solid var(--blue);
+    border-bottom: 5px solid var(--blue);
+
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-title {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* ---------- Main lesson card ---------- */
+.lesson {
+    width: 725px;
+    margin: 50px auto 0 auto;
+    padding: 50px;
+    background-color: var(--cream);
+}
+
+.lesson-title {
+    margin: 0;
+    font-family: "Pacifico", cursive;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 60px;
+    color: var(--blue);
+}
+
+.lesson-subtitle {
+    margin: 0 0 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F0D9A8;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--orange);
+}
+
+.lesson p {
+    margin: 0 0 20px 0;
+}
+
+/* Row of code tags at the top of the card */
+.property-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* ---------- Inline code ---------- */
+code {
+    padding: 2px 8px;
+    border: 1px solid #F0D9A8;
+    border-radius: 4px;
+    background-color: #FFF6E2;
+    font-family: "Source Code Pro", monospace;
+    font-size: 18px;
+    color: var(--orange);
+}
+
+/* ---------- Links ---------- */
+.text-link {
+    color: var(--blue);
+    text-decoration: none;
+    border-bottom: 2px dotted var(--blue);
+}
+
+/* ---------- Wrap-up box ---------- */
+.wrap-up {
+    width: 717px;
+    margin: 40px auto 150px auto;
+    padding: 40px 50px;
+    border-left: 8px solid var(--orange);
+    background-color: var(--blue);
+    color: white;
+}
+
+.wrap-up-title {
+    margin: 0 0 10px 0;
+    font-family: "Pacifico", cursive;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.wrap-up p {
+    margin: 0;
+}
